@@ -12,15 +12,7 @@
 #ifndef _AMAR_STRING_H_
 #define _AMAR_STRING_H_
 
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
 
-//This serves the purpose of very basic string.
-struct string{
-	char *x;
-	int N,n;
-};
 
 
 //This function concatenates a single character to a string

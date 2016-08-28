@@ -38,19 +38,18 @@ int equality(struct string x, struct string y)
 }
 
 //This function builds a string one character at a time from the terminal
-char* getstring(struct string *x){
+char* getstring(struct string *x,char *y){
 
 	char c;
 	x->x=(char*)malloc(sizeof(char));
 	while(1){
-		c = getc(stdin);
+		c = y[i];
+		i++;
 		if(c=='\n' || c=='\r' ){
 			break;
 		}
 		insert(x,c);
 	}
-	
-	return x->x;
 
 }
 
